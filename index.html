@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Engineer Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #eef3ff;
+      line-height: 1.6;
+    }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 8%; background: #121a2e;
+      position: sticky; top: 0;
+    }
+    nav a { color: #68e1fd; text-decoration: none; margin-left: 18px; }
+    .hero { padding: 90px 8%; text-align: center; }
+    .hero h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.2; }
+    .hero h1 span { color: #68e1fd; }
+    .hero p { color: #a7b3cc; max-width: 650px; margin: 20px auto; }
+    .btn {
+      display: inline-block; background: #68e1fd; color: #0b1020;
+      padding: 12px 20px; border-radius: 8px; margin: 10px;
+      text-decoration: none; font-weight: bold;
+    }
+    section { padding: 60px 8%; }
+    h2 { color: #68e1fd; font-size: 30px; margin-bottom: 20px; }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #121a2e; padding: 24px; border-radius: 14px;
+      border: 1px solid #26334e;
+    }
+    .card h3 { margin-bottom: 10px; }
+    .card p, section p { color: #a7b3cc; }
+    .tags { color: #68e1fd; margin-top: 12px; font-size: 14px; }
+    footer { text-align: center; padding: 25px; color: #a7b3cc; }
+    @media (max-width: 600px) {
+      nav { flex-wrap: wrap; gap: 10px; }
+      nav a { margin-left: 8px; }
+      .hero { padding: 65px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>Abhishek Jha | Cloud Engineer</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Hello, I'm <span>Abhishek Jha</span></h1>
+    <h2 style="color:white">Aspiring Cloud Engineer</h2>
+    <p>
+      I build and learn cloud infrastructure using AWS, Linux, Docker,
+      Terraform and DevOps tools. My goal is to develop secure, scalable
+      and cost-efficient cloud solutions.
+    </p>
+    <a class="btn" href="#projects">View My Projects</a>
+    <a class="btn" href="#contact">Contact Me</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am developing practical cloud engineering skills through hands-on
+      projects involving AWS infrastructure, deployment, networking,
+      automation and monitoring. I enjoy troubleshooting issues and
+      documenting what I learn.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>☁️ AWS Cloud</h3>
+        <p>Cloud infrastructure and networking.</p>
+        <div class="tags">EC2 · S3 · VPC · IAM · CloudWatch</div>
+      </article>
+      <article class="card">
+        <h3>🐧 Linux</h3>
+        <p>Command-line administration and troubleshooting.</p>
+        <div class="tags">Ubuntu · Bash · SSH · Permissions</div>
+      </article>
+      <article class="card">
+        <h3>🐳 DevOps</h3>
+        <p>Containers and source-code management.</p>
+        <div class="tags">Docker · Git · GitHub · CI/CD</div>
+      </article>
+      <article class="card">
+        <h3>🏗️ Infrastructure as Code</h3>
+        <p>Infrastructure configuration and automation.</p>
+        <div class="tags">Terraform · AWS CLI</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>TalentFlow AI — AWS</h3>
+        <p>
+          A cloud project focused on application deployment and AWS
+          infrastructure. Add your actual architecture and implementation
+          details here.
+        </p>
+        <div class="tags">AWS · Terraform · Docker · EC2</div>
+      </article>
+      <article class="card">
+        <h3>Static Portfolio Website</h3>
+        <p>
+          A responsive personal portfolio built with HTML and CSS,
+          suitable for static hosting on Amazon S3.
+        </p>
+        <div class="tags">HTML · CSS · JavaScript · S3</div>
+      </article>
+      <article class="card">
+        <h3>Load Balancer & Auto Scaling</h3>
+        <p>
+          A hands-on lab for routing traffic to EC2 instances and
+          checking target health and scaling behavior.
+        </p>
+        <div class="tags">ALB · EC2 · Target Groups</div>
+      </article>
+      <article class="card">
+        <h3>Terraform Infrastructure</h3>
+        <p>
+          Practice defining, validating, planning and deploying AWS
+          infrastructure as code.
+        </p>
+        <div class="tags">Terraform · AWS · Git</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>I'm interested in Cloud Engineer, AWS Intern and DevOps Intern opportunities.</p>
+    <p style="margin-top:15px">
+      Email: <a style="color:#68e1fd" href="mailto:your.email@example.com">
+        j.abhishek9943@example.com
+      </a>
+    </p>
+    <p>
+      GitHub: <a style="color:#68e1fd" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        Add your GitHub profile
+      </a>
+    </p>
+    <p>
+      LinkedIn: <a style="color:#68e1fd" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        Add your LinkedIn profile
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Your Name | Cloud Engineer Portfolio
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
